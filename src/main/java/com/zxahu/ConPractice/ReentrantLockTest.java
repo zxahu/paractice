@@ -14,7 +14,7 @@ package com.zxahu.ConPractice;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class ConcurrentTest {
+public class ReentrantLockTest {
 
     class Producer{
         private Depot depot;
@@ -95,10 +95,10 @@ public class ConcurrentTest {
     }
 
     public static void main(String args[]) throws Exception{
-        ConcurrentTest test = new ConcurrentTest();
-        ConcurrentTest.Depot depot = test.new Depot();
-        final ConcurrentTest.Producer producer = test.new Producer(depot);
-        final ConcurrentTest.Consumer consumer = test.new Consumer(depot);
+        ReentrantLockTest test = new ReentrantLockTest();
+        ReentrantLockTest.Depot depot = test.new Depot();
+        final ReentrantLockTest.Producer producer = test.new Producer(depot);
+        final ReentrantLockTest.Consumer consumer = test.new Consumer(depot);
 
         new Thread(){
             public void run() {
