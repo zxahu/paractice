@@ -9,7 +9,7 @@ Description:
 
 ======================
 */
-package com.zxahu.ConPractice.ReentrantRWLock;
+package com.zxahu.ConPractice;
 
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
