@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
 
 /**
- * Unit test for simple App.
+ * Unit Test for simple App.
  */
 public class AppTest extends SpringTestNGSupport {
 
