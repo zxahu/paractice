@@ -12,12 +12,14 @@ Description:
 package com.zxahu.base;
 
 
+import java.util.concurrent.ConcurrentHashMap;
+
 public class SymbolTest {
 
 
 
     public static void main(String args[]) {
-        hash();
+        System.out.println(1 << 30);
     }
 
     /**
@@ -94,5 +96,38 @@ public class SymbolTest {
         System.out.println(res + " " + Integer.toBinaryString(res));
     }
 
+    private static void test() {
+        final ConcurrentHashMap map = new ConcurrentHashMap();
+        new Thread() {
+            public void run() {
+                while(true) {
+                    for(int i = 0; i< 5; i++) {
+                        map.put(i, "abc");
+                    }
+                }
+            }
+        }.start();
+        new Thread() {
+            public void run() {
+                while (true) {
+                    for(int i = 0; i< 5; i++) {
+                        map.put(i, "def");
+                    }
+                }
+            }
+        }.start();
+        new Thread() {
+            public void run() {
+                while(true) {
+                    String res = "";
+                    for(int i = 0; i< 5; i++) {
+                        res += map.get(i) + " ";
+                    }
+                    System.out.println(res);
+                }
+            }
+        }.start();
+
+    }
 
 }
