@@ -1,4 +1,8 @@
 # 动态代理
+
+```$xslt
+以下文字为学习(https://blog.csdn.net/luanlouis/article/details/24589193)的笔记：
+```
 ## 代理模式的角色
 1. Subject : 负责定义RealSubject和Proxy应该实现的接口   
 2. RealSubject : 真正完成业务服务的功能
