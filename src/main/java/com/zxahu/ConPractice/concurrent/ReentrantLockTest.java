@@ -9,7 +9,7 @@ Description:
 
 ======================
 */
-package com.zxahu.ConPractice;
+package com.zxahu.ConPractice.concurrent;
 
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
