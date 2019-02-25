@@ -9,7 +9,7 @@ Description:
 
 ======================
 */
-package com.zxahu.spring;
+package com.zxahu.spring.aop;
 
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;

@@ -9,7 +9,7 @@ Description:
 
 ======================
 */
-package com.zxahu.spring;
+package com.zxahu.spring.aop;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;

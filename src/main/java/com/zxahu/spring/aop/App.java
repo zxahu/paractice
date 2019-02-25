@@ -1,4 +1,4 @@
-package com.zxahu.spring;
+package com.zxahu.spring.aop;
 
 import org.springframework.stereotype.Component;
 

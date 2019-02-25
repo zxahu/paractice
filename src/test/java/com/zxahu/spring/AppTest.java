@@ -1,5 +1,6 @@
 package com.zxahu.spring;
 
+import com.zxahu.spring.aop.App;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.testng.annotations.Test;
 
